@@ -5,5 +5,3 @@ word = str(sys.stdin.readline().strip())
 idx = word.index('a')
 print(word[:idx+1])
 print(word[idx+1:])
-# for i in word:
-#     print(i)
