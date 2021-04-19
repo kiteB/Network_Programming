@@ -22,7 +22,7 @@ while True:
         c.send(b'\r\n')
 
         data = f.read()
-        c.send(data.encode('euc-kr', 'ignore'))
+        c.send(data.encode('euc-kr', 'ignore')) # 'ignore'를 안하면 ? 나타남.
 
     elif filename == 'iot.png':
         f = open(filename, 'rb')

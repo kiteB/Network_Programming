@@ -10,7 +10,7 @@ sock = socket(AF_INET, SOCK_DGRAM)
 
 while True:
     msg = input('Enter a message: ')
-    if msg == 'q':
+    if msg == 'q': # 'q'를 입력하면 종료
         break
     sock.sendto(msg.encode(), ('localhost', port))
     data, addr = sock.recvfrom(BUFSIZE)
